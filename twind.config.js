@@ -21,6 +21,17 @@ const config = defineConfig({
   theme: {
     extend: {
       screens: screens,
+      boxShadow: {
+        "card-box": "0px 2px 4px rgba(0, 0, 0, 0.2)",
+      },
+      fontFamily: {
+        "primary-default": ['"DM Sans"', "sans-serif"],
+      },
+    },
+  },
+  preflight: {
+    body: {
+      "@apply": "bg-[#E8F1FE] font-primary-default",
     },
   },
 });

@@ -1,0 +1,10 @@
+.animated-div {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 3s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.animated-div.visible {
+  opacity: 1;
+  transform: none;
+}
