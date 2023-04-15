@@ -4,7 +4,7 @@ const TheWhys = () => {
   return (
     <section>
       <h1 className="text-center my-5 text-[15px] tablet:text-[25px]">
-        Why We're The Best
+        Lorem Ipsum
       </h1>
       <div className="tablet:(flex flex-wrap) justify-evenly ml-2">
         {[...Array(3)].map((_, index) => (

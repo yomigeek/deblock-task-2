@@ -1,11 +1,10 @@
 import Image from "next/image";
 import CreateAccount from "@modules/CreateAccount";
-
-import HeroImage from "public/images/jpegs/hero.jpeg";
 import Header from "@components/navigation/Header";
 import AccountTypes from "@modules/AccountTypes";
 import TheWhys from "@modules/TheWhys";
 
+import HeroImage from "public/images/jpegs/hero.jpeg";
 
 export default function Home() {
   return (
@@ -19,6 +18,10 @@ export default function Home() {
           <TheWhys />
           <AccountTypes />
           <CreateAccount />
+          <TheWhys />
+          <TheWhys />
+          <TheWhys />
+          <AccountTypes />
         </main>
       </div>
     </>
