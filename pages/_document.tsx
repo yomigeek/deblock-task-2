@@ -7,6 +7,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta charSet="UTF-8" />
+          <title>DeBlock Task 2</title>
           <meta name="description" content="" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />

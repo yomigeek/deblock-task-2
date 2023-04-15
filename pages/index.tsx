@@ -16,12 +16,11 @@ export default function Home() {
             <Image alt="hero-image" src={HeroImage} className="rounded-lg" />
           </div>
           <TheWhys />
+          <TheWhys />
           <AccountTypes />
           <CreateAccount />
           <TheWhys />
           <TheWhys />
-          <TheWhys />
-          <AccountTypes />
         </main>
       </div>
     </>

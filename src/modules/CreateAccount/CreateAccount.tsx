@@ -28,7 +28,7 @@ const CreateAccount = () => {
     <section
       id="create-account"
       className={tx(
-        "opacity-0 scale-90 transition ease-in-out delay-300 duration-300",
+        "opacity-0 scale-90 transition ease-in-out delay-500 duration-300",
         isVisible && "opacity-100 scale-0"
       )}
       ref={animatedDivRef}
