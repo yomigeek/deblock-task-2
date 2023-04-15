@@ -1,6 +1,9 @@
 # ScrollWork APP
 Welcome to the Scroll Work APP.
 
+## Deployed URL
+https://deblock-yomi-2.netlify.app/
+
 ## Local setup
 - Clone the repository - `git clone https://github.com/yomigeek/deblock-task-2.git`
 - Install dependencies - `yarn install`
