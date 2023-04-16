@@ -4,7 +4,7 @@ import Button from "@components/common/Button";
 
 const CreateAccount = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
-  const animatedDivRef = useRef<any>(null);
+  const animatedDivRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -17,10 +17,14 @@ const CreateAccount = () => {
       });
     });
 
-    observer.observe(animatedDivRef.current);
+    if (animatedDivRef.current) {
+      observer.observe(animatedDivRef.current);
+    }
 
     return () => {
-      observer.unobserve(animatedDivRef.current);
+      if (animatedDivRef.current) {
+        observer.unobserve(animatedDivRef.current);
+      }
     };
   }, [animatedDivRef]);
 
@@ -33,9 +37,9 @@ const CreateAccount = () => {
       )}
       ref={animatedDivRef}
     >
-      <div className="create-account-cta bg-[#2F3A7C] p-8 text-center text-white">
-        <h2 className="mb-4">Don't have an account?</h2>
-        <p className="mb-4">Sign up today to start banking with us today!</p>
+      <div className="create-account-cta bg-[#2F3A7C] p-5 text-center text-white">
+        <h2 className="mb-4 text-[23px]">Don't have an account?</h2>
+        <p className="mb-4">Sign up to start banking with us today!</p>
         <div className="animate-pulse">
           <Button text="Create Account" />
         </div>

@@ -3,7 +3,7 @@ import Card from "@components/common/Card";
 const TheWhys = () => {
   return (
     <section>
-      <h1 className="text-center my-5 text-[15px] tablet:text-[25px]">
+      <h1 className="text-center my-5 text-[20px] tablet:text-[25px]">
         Lorem Ipsum
       </h1>
       <div className="tablet:(flex flex-wrap) justify-evenly ml-2">
