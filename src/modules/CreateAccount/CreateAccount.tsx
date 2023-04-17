@@ -7,23 +7,23 @@ const CreateAccount = () => {
   const animatedDivRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          return;
-        }
-        setIsVisible(false);
-      });
-    });
+    const handleIntersection: IntersectionObserverCallback = (entries) => {
+      const isIntersecting = entries.some((entry) => entry.isIntersecting);
 
-    if (animatedDivRef.current) {
-      observer.observe(animatedDivRef.current);
+      setIsVisible(isIntersecting);
+    };
+
+    const observer = new IntersectionObserver(handleIntersection);
+
+    const target = animatedDivRef.current;
+
+    if (target) {
+      observer.observe(target);
     }
 
     return () => {
-      if (animatedDivRef.current) {
-        observer.unobserve(animatedDivRef.current);
+      if (target) {
+        observer.unobserve(target);
       }
     };
   }, [animatedDivRef]);
@@ -37,7 +37,7 @@ const CreateAccount = () => {
       )}
       ref={animatedDivRef}
     >
-      <div className="create-account-cta bg-[#2F3A7C] p-5 text-center text-white">
+      <div className="bg-[#2F3A7C] p-5 text-center text-white">
         <h2 className="mb-4 text-[23px]">Don't have an account?</h2>
         <p className="mb-4">Sign up to start banking with us today!</p>
         <div className="animate-pulse">

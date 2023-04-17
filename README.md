@@ -1,5 +1,5 @@
-# ScrollWork APP
-Welcome to the Scroll Work APP.
+# Scroll APP
+Welcome to the Scroll APP.
 
 ## Deployed URL
 https://deblock-yomi-2.netlify.app/

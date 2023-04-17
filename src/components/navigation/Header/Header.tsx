@@ -1,5 +1,4 @@
 import Image from "next/image";
-import CreateAccount from "@modules/CreateAccount";
 
 import Logo from "public/images/pngs/pay-logo.png";
 
@@ -9,7 +8,7 @@ const Header = () => {
       <header className="flex mb-8 items-center justify-between">
         <div>
           <a href="/">
-            <Image alt="logo" src={Logo} width={50} height={10} />
+            <Image alt="logo" src={Logo} width={40} height={40} />
           </a>
         </div>
         <nav>
@@ -17,7 +16,7 @@ const Header = () => {
             <li>
               <a
                 href="#create-account"
-                className="text-blue-800	hover:text-blue-600"
+                className="text-blue-900 hover:text-blue-600"
               >
                 Get Started
               </a>
