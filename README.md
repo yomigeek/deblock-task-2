@@ -2,7 +2,7 @@
 Welcome to the Scroll APP.
 
 ## Deployed URL
-https://deblock-yomi-2.netlify.app/
+https://deblock-task-2.vercel.app/
 
 ## Local setup
 - Clone the repository - `git clone https://github.com/yomigeek/deblock-task-2.git`
