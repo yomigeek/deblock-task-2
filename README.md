@@ -1,5 +1,5 @@
 # Scroll APP
-Welcome to the Scroll APP.
+Welcome to the Scroll APP(Trigger animations based on scroll position).
 
 ## Deployed URL
 https://deblock-task-2.vercel.app/
