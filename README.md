@@ -2,10 +2,10 @@
 Welcome to the Scroll APP(Trigger animations based on scroll position).
 
 ## Deployed URL
-https://deblock-task-2.vercel.app/
+https://basic-scroll-animation.vercel.app
 
 ## Local setup
-- Clone the repository - `git clone https://github.com/yomigeek/deblock-task-2.git`
+- Clone the repository - `git clone https://github.com/yomigeek/scroll-animation.git`
 - Install dependencies - `yarn install`
 - Start a localhost - `yarn run dev`
 
